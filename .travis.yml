@@ -1,6 +1,5 @@
 language: generic
 sudo: required
-install: skip
 cache: false
 matrix:
   fast_finish: true
