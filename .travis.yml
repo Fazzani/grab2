@@ -15,6 +15,12 @@ if: (commit_message =~ ^daily OR type = "cron") AND (branch = master)
 env:
   - WEBGRAB_FILENAME=configs/ar_el_cinema.xml
   - WEBGRAB_FILENAME=configs/ar_arab.xml
+  - WEBGRAB_FILENAME=configs/ar_osn.xml
+  - WEBGRAB_FILENAME=configs/ar_seevi.xml
+  - WEBGRAB_FILENAME=configs/fr_telerama.xml
+  - WEBGRAB_FILENAME=configs/fr_telerama.be.xml
+  - WEBGRAB_FILENAME=configs/fr_canal.xml
+  - WEBGRAB_FILENAME=configs/fr_canal2.xml
 script:
 - git clone https://${GITHUB_API_TOKEN}@github.com/fazzani/grab.git > /dev/null 2>&1
 - cd grab
