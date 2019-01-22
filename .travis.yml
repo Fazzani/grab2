@@ -17,6 +17,6 @@ env:
 script:
 - git clone https://${GITHUB_API_TOKEN}@github.com/fazzani/grab.git > /dev/null 2>&1
 - cd grab
-- docker run -it --rm -v "${PWD}/${WEBGRAB_FILENAME}:/config/WebGrab++.config.xml" -v "${PWD}:/data" synker/webgraboneshot:latest
+- docker run -it --rm -v "${PWD}/${WEBGRAB_FILENAME}:/config/WebGrab++.config.xml" -v "${PWD}:/data" -e "DEBUG=false" synker/webgraboneshot:latest
 - git add --all && (git commit -m "Webgrab ${WEBGRAB_FILENAME} from grab2" || echo "No changes to commit")
 - (git pull && git push ) || (sleep 100 && git pull && git push)
