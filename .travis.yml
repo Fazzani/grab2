@@ -17,10 +17,6 @@ env:
   - WEBGRAB_FILENAME=configs/ar_arab.xml
   - WEBGRAB_FILENAME=configs/ar_osn.xml
   - WEBGRAB_FILENAME=configs/ar_seevi.xml
-  - WEBGRAB_FILENAME=configs/fr_telerama.xml
-  - WEBGRAB_FILENAME=configs/fr_telerama.be.xml
-  - WEBGRAB_FILENAME=configs/fr_canal.xml
-  - WEBGRAB_FILENAME=configs/fr_canal2.xml
 before_script:
   - export TZ=Europe/London
 script:
