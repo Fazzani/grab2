@@ -1,5 +1,4 @@
 language: generic
-sudo: required
 install: skip
 services:
   - docker
